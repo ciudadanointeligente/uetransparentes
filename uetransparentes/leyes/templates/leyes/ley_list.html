@@ -1,0 +1,6 @@
+<h1>Lista de Leyes</h1>
+<ul>
+  {% for ley in leyes %}
+  <li><a href="{{ ley.id }}/">{{ ley.ley }}</a></li>
+  {% endfor %}
+</ul>
