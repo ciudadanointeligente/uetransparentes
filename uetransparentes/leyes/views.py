@@ -3,13 +3,18 @@ from django.views.generic import ListView, DetailView
 from .models import Ley
 
 
-class LeyListView(ListView):
-    model = Ley
-    template_name = "leyes/ley_list.html"
-    context_object_name = "leyes"
+def index(request):
+    context = {}
+    return render(request, "leyes/index.html", context)
 
 
-class LeyDetailView(DetailView):
-    model = Ley
-    template_name = "leyes/ley_detail.html"
-    context_object_name = "ley"
+# class LeyListView(ListView):
+#     model = Ley
+#     template_name = "leyes/ley_list.html"
+#     context_object_name = "leyes"
+#
+#
+# class LeyDetailView(DetailView):
+#     model = Ley
+#     template_name = "leyes/ley_detail.html"
+#     context_object_name = "ley"
