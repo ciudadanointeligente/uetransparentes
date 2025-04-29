@@ -45,8 +45,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "leyes",
-    "theme",
-    "django_browser_reload",
 ]
 
 MIDDLEWARE = [
