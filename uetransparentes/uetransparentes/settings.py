@@ -25,13 +25,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config("SECRET_KEY")
+SECRET_KEY = dkeosjsksjsaaa8987987
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DEBUG", cast=bool)
+DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [https://uetransparentes.onrender.com]
 
 
 # Application definition
@@ -130,13 +130,8 @@ STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
 
-STATIC_URL = config("STATIC_URL")
-STATIC_ROOT = config("STATIC_ROOT")
-STATICFILES_DIRS = config("STATICFILES_DIRS", cast=Csv())
-
-MEDIA_ROOT = config("MEDIA_ROOT")
-MEDIA_URL = config("MEDIA_URL")
-
+STATIC_URL = "static/"
+STATIC_ROOT = BASE_DIR / "static"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
